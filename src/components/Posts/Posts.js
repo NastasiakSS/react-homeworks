@@ -1,14 +1,11 @@
 import React from 'react';
 
-const Posts = ({posts: {id, userId, title, body}}) => {
+const Post = ({posts}) => {
     return (
         <div>
-            <div>Id: {id}/div></div>
-            <div>UserId: {userId}</div>
-            <div>Title: {title}</div>
-            <div>Body: {body}</div>*/
+            {posts.map(post => <Post key={post.id} post={post}/> )}
         </div>
     );
 };
 
-export default Posts;
+export default Post;
