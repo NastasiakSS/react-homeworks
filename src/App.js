@@ -1,25 +1,25 @@
 import logo from './logo.svg';
+
 import './App.css';
+import Comments from "./compomnents/comments";
+import Users from "./compomnents/users";
+import Posts from "./compomnents/posts"
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return (
+        <div>
+            <div>
+            <Users/>
+                <Posts/>
+
+        </div>
+    <div>
+        <Comments/>
     </div>
-  );
+</div>
+)
+    ;
 }
 
 export default App;
